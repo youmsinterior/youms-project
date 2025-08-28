@@ -1,0 +1,521 @@
+/* ---------------- POLICES ---------------- */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+.roboto {
+    font-family: 'Roboto Slab', serif;
+}
+
+/* ---------------- HEADER / SLIDER ---------------- */
+.header_wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header_wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%; /* un peu plus grand pour le parallaxe */
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease, transform 0.2s ease-out;
+    z-index: -1;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Contenu du header */
+.header_content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+ .btn , .contact .btn-message, .btn-closee {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #9E7E44;
+    color: #EEE5DC;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.btn-deco{
+     font-size: 0.7rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #9E7E44;
+    color: #EEE5DC;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+ .btn:hover {
+    background-color:#2F3F36;
+}
+.nav-link{
+    color: #EEE5DC;
+}
+
+/* Navbar */
+.header_wrapper .nav-item {
+    padding: 15px;
+}
+
+.header_wrapper .nav-item .nav-link:hover {
+    color: #2F3F36;
+}
+/* ---------------- ABOUT ---------------- */
+
+
+
+
+/* ---------------- SERVICES ---------------- */
+.services .card {
+    border: 0;
+}
+
+/* ---------------- PORTFOLIO ---------------- */
+.portfolio {
+    background-color: #F8F9FA;
+}
+
+.portfolio .card,
+.portfolio .card img {
+    border: 0;
+    border-radius: 0;
+}
+
+.portfolio .card .card-img-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(75% + 30px);
+    border-radius: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.portfolio .card .card-img-overlay:hover {
+    background-color: #9E7E44;
+    opacity: 1;
+}
+
+.btn {
+    border: none;
+}
+
+/* Modal des images */
+.portfolio .card .modal-dialog {
+    width: 98%;
+    height: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-categorie {
+    background-color: #9E7E44;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-categorie:hover {
+    background-color: #2F3F36;
+}
+
+.btn-categorie.active {
+    background-color: #2F3F36;
+    color: #ffffff;
+}
+
+/* gestion panier */
+.btn-commander {
+  background-color: #2F3F36;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 14px;
+  transition: transform .15s ease;
+}
+.btn-commander:hover { transform: translateY(-1px); }
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  gap: 2px;
+  align-items: center;
+  padding: 2px 0;
+  border-bottom: 1px solid #eee;
+}
+.cart-item img {
+  width: 64px; height: 64px; object-fit: cover; border-radius: 8px;
+}
+.cart-item .name { font-weight: 600; }
+.cart-item .price { font-weight: 600; }
+.qty-control {
+  display: inline-flex; align-items: center; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;
+}
+.qty-control button {
+  border: 0; background: #f7f7f7; width: 32px; height: 32px;
+}
+.qty-control input {
+  width: 44px; height: 32px; text-align: center; border: 0; outline: 0;
+}
+.btn-remove {
+  border: 0; background: transparent; color: #dc3545;
+}
+
+/* validation panier */
+
+/* Masquer la modale sans la retirer du DOM */
+#checkoutModal.hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* Affichage normal de la modale */
+#checkoutModal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1050;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+
+#checkoutModal .checkout-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+#checkoutModal input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+#checkoutModal .checkout-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+#checkoutModal button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+/* Responsive pour portfolio */
+@media (max-width:672px) {
+    .portfolio .card .btn-close {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:768px) {
+    .portfolio .card .btn-close {
+        font-size: 50px;
+    }
+    .portfolio .card .modal-body h1 {
+        font-size: 70px;
+    }
+}
+
+/* ---------------- ABOUT ---------------- */
+/* Cercle des images */
+.div-img-circle {
+    width: 150px; /* Taille par défaut sur laptop */
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* Image à l'intérieur du cercle */
+.div-img-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* On remplit complètement le cercle sur laptop */
+    border-radius: 50%;
+}
+
+/* RESPONSIVE : Sur mobile, on affiche l'image entière */
+@media (max-width: 768px) {
+    .div-img-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .div-img-circle img {
+        object-fit: contain; /* L'image entière sera visible */
+        background-color: #fff; /* Remplissage blanc autour si besoin */
+    }
+}
+
+@media (max-width: 576px) {
+    .div-img-circle {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 380px) {
+    .div-img-circle {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+
+.about img {
+    border-radius: 50%;
+    border: 7px solid #E9ECEF;
+}
+
+.about .row {
+    margin-bottom: 100px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 97%;
+    background-color: #E9ECEF;
+    top: 32px;
+    left: 50%;
+    z-index: -1;
+}
+
+.div-img-circle {
+    position: relative;
+}
+
+.div-img-circle img {
+    position: absolute;
+    top: 0;
+}
+
+.last-circle-of-timeline {
+    background-color: #9E7E44;
+    border-radius: 100%;
+    border: 7px solid #E9ECEF;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+/* Bouton retour en haut */
+.btn-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #9E7E44; /* couleur assortie à ta navbar */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.btn-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+
+/* Responsive about */
+@media (max-width:1400px) {
+    .about img,
+    .last-circle-of-timeline {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width:992px) {
+    .about img,
+    .last-circle-of-timeline {
+        width: 130px;
+        height: 130px;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+    .timeline::after {
+        left: 12%;
+    }
+}
+
+@media (max-width:768px) {
+    .about img,
+    .last-circle-of-timeline {
+        width: 100px;
+        height: 100px;
+    }
+    .last-circle-of-timeline {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:576px) {
+    .about img,
+    .last-circle-of-timeline {
+        width: 90px;
+        height: 90px;
+    }
+    .last-circle-of-timeline {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:380px) {
+    .about img,
+    .last-circle-of-timeline {
+        width: 70px;
+        height: 70px;
+    }
+    .last-circle-of-timeline {
+        font-size: 8px;
+    }
+}
+
+/* ---------------- TEAM ---------------- */
+.team {
+    background-color: #F8F9FA;
+}
+
+.team .img-team {
+    border-radius: 50%;
+    border: 7px solid #DFE0E1;
+    width: 250px;
+    height: 250px;
+}
+
+@media(max-width:768px) {
+    .team .img-team {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media(max-width:370px) {
+    .team .img-team {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+.team .icone-network,
+.footer .icone-network {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+/* ---------------- ENTREPRISE ---------------- */
+.entreprise img {
+    width: 130px;
+    height: 130px;
+}
+
+@media (max-width:768px) {
+    .entreprise .ibm {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* ---------------- CONTACT ---------------- */
+.contact {
+    background-color: #2F3F36;
+    background-image: url("img/map-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact .btn-message {
+    width: 300px;
+    height: 50px;
+    margin: auto;
+}
+
+@media (max-width:768px) {
+    .contact .btn-message {
+        width: 200px;
+        height: 50px;
+    }
+}
+
+@media(max-width:370px) {
+    .contact .btn-message {
+        width: 130px;
+        height: 50px;
+    }
+}
+
+@media (max-width:576px) {
+    .contact .form-control {
+        width: 300px;
+        height: 50px;
+    }
+}
+

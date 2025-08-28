@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nom": "Coussin décoratif",
+        "description": "Apportez une touche de confort et d’élégance à votre salon.",
+        "prix": "15 000 CFA",
+        "image": "img/coussin.jpg",
+        "categorie": "coussins"
+    },
+    {
+        "id": 2,
+        "nom": "Lampe moderne",
+        "description": "Illuminez votre pièce avec une ambiance chaleureuse.",
+        "prix": "25 000 CFA",
+        "image": "img/lampe.jpg",
+        "categorie": "lampes"
+    },
+    {
+        "id": 3,
+        "nom": "Meuble",
+        "description": "Un style moderne pour un intérieur raffiné.",
+        "prix": "60 000 CFA",
+        "image": "img/meuble.jpg",
+        "categorie": "meubles"
+    },
+    {
+        "id": 4,
+        "nom": "panneau mural",
+        "description": "Une touche de modernité pour vos espaces.",
+        "prix": "18 000 CFA",
+        "image": "img/panneau.jpg",
+        "categorie": "murs"
+    },
+    {
+        "id": 5,
+        "nom": "papier peint",
+        "description": "Sublimez vos murs avec ce papier peint unique.",
+        "prix": "12 000 CFA",
+        "image": "img/papier.jpg",
+        "categorie": "murs"
+    }
+]
