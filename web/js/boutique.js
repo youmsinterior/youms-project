@@ -358,7 +358,7 @@ btnConfirmCheckout.addEventListener("click", async () => {
   const total = cart.total();
 
   try {
-    const res = await fetch("http://localhost:3002/api/checkout", {
+    const res = await fetch("/api/checkout", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ customer, items, total }),
