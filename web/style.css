@@ -379,6 +379,20 @@
     transform: scale(1);
 }
 
+/* style des numeros de telephones */
+.phone-link {
+    color: #9E7E44;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 16px;
+}
+
+.phone-link:hover {
+    color: #d4af37; /* Couleur plus claire au survol */
+    text-decoration: underline;
+}
+
 
 /* Responsive about */
 @media (max-width:1400px) {
