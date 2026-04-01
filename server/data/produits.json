@@ -43,7 +43,7 @@
         "id": 6,
         "nom": "tableau",
         "description": "Sublimez vos murs avec ce joli tableau.",
-        "prix": "6 000 CFA",
+        "prix": "10 000 CFA",
         "image": "img/tableau1.jpeg",
         "categorie": "murs"
     },
@@ -51,7 +51,7 @@
         "id": 7,
         "nom": "tableau",
         "description": "Sublimez vos murs avec ce joli tableau.",
-        "prix": "6 000 CFA",
+        "prix": "10 000 CFA",
         "image": "img/tableau2.jpeg",
         "categorie": "murs"
     },
@@ -59,7 +59,7 @@
         "id": 8,
         "nom": "tableau",
         "description": "Sublimez vos murs avec ce joli tableau.",
-        "prix": "6 000 CFA",
+        "prix": "10 000 CFA",
         "image": "img/tableau3.jpeg",
         "categorie": "murs"
     },
@@ -67,7 +67,7 @@
         "id": 9,
         "nom": "tableau",
         "description": "Sublimez vos murs avec ce joli tableau.",
-        "prix": "6 000 CFA",
+        "prix": "10 000 CFA",
         "image": "img/tableau4.jpeg",
         "categorie": "murs"
     },
@@ -75,7 +75,7 @@
         "id": 10,
         "nom": "tableau",
         "description": "Sublimez vos murs avec ce joli tableau.",
-        "prix": "6 000 CFA",
+        "prix": "10 000 CFA",
         "image": "img/tableau5.jpeg",
         "categorie": "murs"
     },
@@ -83,7 +83,7 @@
         "id": 11,
         "nom": "tableau",
         "description": "Sublimez vos murs avec ce joli tableau.",
-        "prix": "6 000 CFA",
+        "prix": "10 000 CFA",
         "image": "img/tableau6.jpeg",
         "categorie": "murs"
     },
@@ -91,7 +91,7 @@
         "id": 12,
         "nom": "tableau",
         "description": "Sublimez vos murs avec ce joli tableau.",
-        "prix": "6 000 CFA",
+        "prix": "10 000 CFA",
         "image": "img/tableau7.jpeg",
         "categorie": "murs"
     },
@@ -99,7 +99,7 @@
         "id": 13,
         "nom": "tableau",
         "description": "Sublimez vos murs avec ce joli tableau.",
-        "prix": "6 000 CFA",
+        "prix": "10 000 CFA",
         "image": "img/tableau8.jpeg",
         "categorie": "murs"
     },
@@ -107,7 +107,7 @@
         "id": 14,
         "nom": "tableau",
         "description": "Sublimez vos murs avec ce joli tableau.",
-        "prix": "6 000 CFA",
+        "prix": "10 000 CFA",
         "image": "img/tableau9.jpeg",
         "categorie": "murs"
     }
