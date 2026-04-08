@@ -51,9 +51,9 @@
 
         <!-- Slider images -->
         <div class="slider">
-            <div class="slide" style="background-image: url('img/header-bg1.jpeg');"></div>
-            <div class="slide" style="background-image: url('img/header-bg2.jpeg');"></div>
-            <div class="slide" style="background-image: url('img/header-bg3.jpeg');"></div>
+            <div class="slidee" style="background-image: url('img/header-bg1.jpeg');"></div>
+            <div class="slidee" style="background-image: url('img/header-bg2.jpeg');"></div>
+            <div class="slidee" style="background-image: url('img/header-bg3.jpeg');"></div>
         </div>
 
         <!-- Contenu du header -->
@@ -124,6 +124,60 @@
         </div>
         <div class="container py-5">
             <div class="row gy-4">
+                <!-- bureau1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card text-center">
+                        <div>
+                            <img src="img/bureau1.jpeg" class="card-img-top" alt="..." />
+                            <div class="card-img-overlay btn" data-bs-toggle="modal" data-bs-target="#bureau1">
+                                <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
+                            </div>
+                            <div class="modal fade" id="bureau1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+                                    <div class="modal-content rounded-4">
+                                        <div class="modal-header">
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h1>Bureaux</h1>
+                                            <div class="ratio ratio-16x9">
+                                                <iframe src="https://www.youtube.com/embed/ekTQexZk3M4" title="Bureau"
+                                                    allowfullscreen>
+                                                </iframe>
+                                            </div>
+                                            <p class="roboto py-5">
+                                                Un espace de travail élégant et bien aménagé, avec des touches
+                                                décoratives
+                                                raffinées qui créent une ambiance chaleureuse et inspirante pour le
+                                                travail.
+
+                                            </p>
+                                            <p>
+                                                <b>Category:</b>
+                                                Illustration
+                                            </p>
+                                            <button type="button"
+                                                class="btn btn-closee ms-auto me-auto my-4 text-light fw-bold px-md-5 py-md-4"
+                                                data-bs-dismiss="modal">
+                                                <i class="fa-solid fa-xmark me-2" style="color: #ffffff"></i>CLOSE
+                                                PROJECT
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Bureau</h3>
+                            <button class="btn btn-deco fw-bold" data-bs-toggle="modal" data-bs-target="#bureau1">
+                                <i class="fa-solid fa-play me-2"></i> Voir la vidéo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- bureau 1-->
                 <div class="col-md-6 col-lg-4">
                     <div class="card text-center">
                         <div>
@@ -164,6 +218,9 @@
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Plafond</h3>
+                            <button class="btn btn-deco fw-bold" data-bs-toggle="modal" data-bs-target="#modalPlafond">
+                                Voir
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -206,18 +263,23 @@
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Salon</h3>
-
+                            <button class="btn btn-deco fw-bold" data-bs-toggle="modal" data-bs-target="#modalsalon">
+                                Voir
+                            </button>
                         </div>
                     </div>
                 </div>
+
+                <!-- Cuisines -->
+
                 <div class="col-md-6 col-lg-4">
                     <div class="card text-center">
                         <div>
                             <img src="img/cuisine1.jpg" class="card-img-top" alt="..." />
-                            <div class="card-img-overlay btn" data-bs-toggle="modal" data-bs-target="#modalcuisine1">
+                            <div class="card-img-overlay btn" data-bs-toggle="modal" data-bs-target="#cuisine1">
                                 <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
                             </div>
-                            <div class="modal fade" id="modalcuisine1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            <div class="modal fade" id="cuisine1" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
                                     <div class="modal-content rounded-4">
@@ -226,60 +288,43 @@
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <h1>Cuisine 1</h1>
+                                            <h1>cuisines</h1>
+                                            <div id="carouselCuisine1" class="carousel slide" data-bs-ride="carousel">
 
-                                            <img src="img/cuisine1.jpg" class="img-fluid" />
-                                            <p class="roboto py-5">
-                                                Cuisine élégante et fonctionnelle, pensée pour optimiser l’espace et
-                                                faciliter votre quotidien.
-                                            </p>
+                                                <!-- INDICATORS (les petits points) -->
+                                                <div class="carousel-indicators">
+                                                    <button type="button" data-bs-target="#carouselCuisine1"
+                                                        data-bs-slide-to="0" class="active"></button>
+                                                    <button type="button" data-bs-target="#carouselCuisine1"
+                                                        data-bs-slide-to="1"></button>
+                                                </div>
 
-                                            <p>
-                                                <b>Category:</b>
-                                                Illustration
-                                            </p>
-                                            <button type="button"
-                                                class="btn btn-closee ms-auto me-auto my-4 text-light fw-bold px-md-5 py-md-4"
-                                                data-bs-dismiss="modal">
-                                                <i class="fa-solid fa-xmark me-2" style="color: #ffffff"></i>CLOSE
-                                                PROJECT
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Cuisine 1</h3>
+                                                <!-- IMAGES -->
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="img/cuisine1.jpg" class="d-block w-100">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="img/cuisine2.jpeg" class="d-block w-100">
+                                                    </div>
+                                                </div>
 
-                        </div>
-                    </div>
-                </div>
-                <!-- Cuisine 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card text-center">
-                        <div>
-                            <img src="img/cuisine2.jpeg" class="card-img-top" alt="..." />
-                            <div class="card-img-overlay btn" data-bs-toggle="modal" data-bs-target="#cuisine2">
-                                <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
-                            </div>
-                            <div class="modal fade" id="cuisine2" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
-                                    <div class="modal-content rounded-4">
-                                        <div class="modal-header">
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h1>Cuisine 2</h1>
-                                            <img src="img/cuisine2.jpeg" class="img-fluid" />
+                                                <!-- BOUTONS PREV/NEXT -->
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselCuisine1" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon"></span>
+                                                </button>
+
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselCuisine1" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon"></span>
+                                                </button>
+
+                                            </div>
+
                                             <p class="roboto py-5">
 
-                                                Une cuisine chaleureuse avec des meubles en bois et une gazinière,
-                                                alliant style et fonctionnalité pour un espace convivial et pratique.
-
-
+                                                Cuisines élégantes et fonctionnelles
                                             </p>
                                             <p>
                                                 <b>Category:</b>
@@ -297,12 +342,15 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Cuisine 2</h3>
-
+                            <h3 class="card-title">cuisines</h3>
+                            <button class="btn btn-deco fw-bold" data-bs-toggle="modal" data-bs-target="#cuisine1">
+                                Voir
+                            </button>
                         </div>
                     </div>
                 </div>
-                <!-- Cuisine 2 -->
+
+                <!-- Cuisines ! -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card text-center">
                         <div>
@@ -341,8 +389,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <h3 class="card-title">Salle de bain</h3>
+                            <button class="btn btn-deco fw-bold" data-bs-toggle="modal" data-bs-target="#modalsbain">
+                                Voir
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -367,7 +418,8 @@
                                             <img src="img/header-bg3.jpeg" class="img-fluid" />
                                             <p class="roboto py-5">
 
-                                                Une chambre reposante, aux tons doux et à l’atmosphère relaxante pour un
+                                                Une chambre reposante, aux tons doux et à l’atmosphère relaxante
+                                                pour un
                                                 confort optimal.
                                             </p>
                                             <p>
@@ -387,6 +439,9 @@
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Chambre</h3>
+                            <button class="btn btn-deco fw-bold" data-bs-toggle="modal" data-bs-target="#modalchambre">
+                                Voir
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -430,6 +485,9 @@
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Jardin</h3>
+                            <button class="btn btn-deco fw-bold" data-bs-toggle="modal" data-bs-target="#modaljardin">
+                                Voir
+                            </button>
 
                         </div>
                     </div>
@@ -455,7 +513,8 @@
                                             <p class="roboto py-5">
                                                 Découvrez l’avant/après de cette réalisation exceptionnelle signée
                                                 Youm’s Interior. Un design contemporain, des lignes épurées et des
-                                                finitions haut de gamme pour offrir à cette villa un style élégant et
+                                                finitions haut de gamme pour offrir à cette villa un style élégant
+                                                et
                                                 moderne.
 
                                             </p>
@@ -476,6 +535,9 @@
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Facade</h3>
+                            <button class="btn btn-deco fw-bold" data-bs-toggle="modal" data-bs-target="#modalfacade">
+                                Voir
+                            </button>
 
                         </div>
                     </div>
@@ -501,7 +563,8 @@
                                             <img src="img/villa.jpeg" class="img-fluid" />
                                             <p class="roboto py-5">
 
-                                                Une villa spacieuse et élégante, conçue pour allier confort, style et
+                                                Une villa spacieuse et élégante, conçue pour allier confort, style
+                                                et
                                                 modernité.
 
 
@@ -523,105 +586,18 @@
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Villa</h3>
+                            <button class="btn btn-deco fw-bold" data-bs-toggle="modal" data-bs-target="#villafacade">
+                                Voir
+                            </button>
 
                         </div>
                     </div>
                 </div>
                 <!-- villa -->
 
-                <!-- bureau -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card text-center">
-                        <div>
-                            <img src="img/bureau1.jpeg" class="card-img-top" alt="..." />
-                            <div class="card-img-overlay btn" data-bs-toggle="modal" data-bs-target="#bureau1facade">
-                                <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
-                            </div>
-                            <div class="modal fade" id="bureau1facade" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
-                                    <div class="modal-content rounded-4">
-                                        <div class="modal-header">
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h1>Bureau1</h1>
-                                            <img src="img/bureau1.jpeg" class="img-fluid" />
-                                            <p class="roboto py-5">
-                                                Un bureau élégant et bien aménagé, avec des touches décoratives
-                                                raffinées qui créent une ambiance chaleureuse et inspirante pour le
-                                                travail.
-
-                                            </p>
-                                            <p>
-                                                <b>Category:</b>
-                                                Illustration
-                                            </p>
-                                            <button type="button"
-                                                class="btn btn-closee ms-auto me-auto my-4 text-light fw-bold px-md-5 py-md-4"
-                                                data-bs-dismiss="modal">
-                                                <i class="fa-solid fa-xmark me-2" style="color: #ffffff"></i>CLOSE
-                                                PROJECT
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Bureau 1</h3>
-
-                        </div>
-                    </div>
-                </div>
-                <!-- bureau 1-->
 
                 <!-- bureau 2-->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card text-center">
-                        <div>
-                            <img src="img/bureau2.jpeg" class="card-img-top" alt="..." />
-                            <div class="card-img-overlay btn" data-bs-toggle="modal" data-bs-target="#bureau2facade">
-                                <i class="fa-solid fa-plus fa-2xl" style="color: #ffffff"></i>
-                            </div>
-                            <div class="modal fade" id="bureau2facade" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
-                                    <div class="modal-content rounded-4">
-                                        <div class="modal-header">
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h1>Bureau 2</h1>
-                                            <img src="img/bureau2.jpeg" class="img-fluid" />
-                                            <p class="roboto py-5">
-                                                Un bureau minimaliste et fonctionnel, aménagé simplement pour un espace
-                                                de travail épuré et efficace.
 
-                                            </p>
-                                            <p>
-                                                <b>Category:</b>
-                                                Illustration
-                                            </p>
-                                            <button type="button"
-                                                class="btn btn-closee ms-auto me-auto my-4 text-light fw-bold px-md-5 py-md-4"
-                                                data-bs-dismiss="modal">
-                                                <i class="fa-solid fa-xmark me-2" style="color: #ffffff"></i>CLOSE
-                                                PROJECT
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Bureau 2</h3>
-
-                        </div>
-                    </div>
-                </div>
                 <!-- bureau 2-->
 
                 <!-- balcon-->
@@ -644,7 +620,8 @@
                                             <h1>Balcon</h1>
                                             <img src="img/balcon.jpeg" class="img-fluid" />
                                             <p class="roboto py-5">
-                                                Un balcon aménagé avec des fauteuils confortables, offrant un petit coin
+                                                Un balcon aménagé avec des fauteuils confortables, offrant un petit
+                                                coin
                                                 cosy pour se détendre et profiter de l’air frais.
                                             </p>
                                             <p>
@@ -664,6 +641,9 @@
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Balcon</h3>
+                            <button class="btn btn-deco fw-bold" data-bs-toggle="modal" data-bs-target="#balcon">
+                                Voir
+                            </button>
 
                         </div>
                     </div>
@@ -690,8 +670,10 @@
                                             <h1>Terasse</h1>
                                             <img src="img/terasse.jpeg" class="img-fluid" />
                                             <p class="roboto py-5">
-                                                Une terrasse moderne et élégante, équipée de mobilier confortable sur un
-                                                sol en carreaux, offrant un espace idéal pour se détendre et profiter de
+                                                Une terrasse moderne et élégante, équipée de mobilier confortable
+                                                sur un
+                                                sol en carreaux, offrant un espace idéal pour se détendre et
+                                                profiter de
                                                 l’extérieur.
 
 
@@ -713,6 +695,9 @@
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Terasse</h3>
+                            <button class="btn btn-deco fw-bold" data-bs-toggle="modal" data-bs-target="#terasse">
+                                Voir
+                            </button>
 
                         </div>
                     </div>
@@ -761,6 +746,9 @@
                         </div>
                         <div class="card-body">
                             <h3 class="card-title">Deco-piscine</h3>
+                            <button class="btn btn-deco fw-bold" data-bs-toggle="modal" data-bs-target="#deco-piscine">
+                                Voir
+                            </button>
 
                         </div>
                     </div>
@@ -854,14 +842,14 @@
                         </div>
                         <div class="icone-network d-flex justify-content-center align-items-center me-4"
                             style="background-color: #2F3F36">
-                            <a href="https://wa.me/221774745647">
+                            <a href="https://wa.me/221774745647" target="_blank">
                                 <i class="fa-brands fa-whatsapp" style="color: #ffffff"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 py-5 text-center ">
-                    <img src="img/zaraa.jpg" class="img-team img-fluid" />
+                    <img src="img/zara.jpeg" class="img-team img-fluid" />
                     <!-- image retire -->
                     <h3 class="fw-bold pt-4">Zara</h3>
                     <p class="text-secondary roboto">Community manager</p>
@@ -876,7 +864,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 py-5 text-center ">
-                    <img src="img/khadijaa.jpg" class="img-team img-fluid" /> 
+                    <img src="img/khadija.jpeg" class="img-team img-fluid" />
                     <!-- image retire -->
                     <h3 class="fw-bold pt-4">Khadija</h3>
                     <p class="text-secondary roboto">Commercial</p>
@@ -884,7 +872,15 @@
                 <div class="col-md-6 col-lg-4 py-5 text-center ">
                     <img src="img/thierno.jpg" class="img-team img-fluid" />
                     <h3 class="fw-bold pt-4">Thierno</h3>
-                    <p class="text-secondary roboto">CTO</p>
+                    <p class="text-secondary roboto">CTO & civil engineer</p>
+                    <div class="row d-flex justify-content-center">
+                        <div class="icone-network d-flex justify-content-center align-items-center me-4"
+                            style="background-color: #2F3F36">
+                            <a href="https://wa.me/221771809917" target="_blank">
+                                <i class="fa-brands fa-whatsapp" style="color: #ffffff"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1079,7 +1075,10 @@
         });
 
 
+
     </script>
+
+
 
 </body>
 
